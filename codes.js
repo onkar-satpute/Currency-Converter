@@ -42,7 +42,6 @@ const countryList = {
   DKK: "DK",
   DOP: "DO",
   DZD: "DZ",
-  ECS: "EC",
   EEK: "EE",
   EGP: "EG",
   ETB: "ET",
