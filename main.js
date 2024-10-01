@@ -98,3 +98,20 @@ document.querySelector("#swap-btn").addEventListener("click", (e) => {
 });
 
 window.addEventListener("load", getExchangeRate);
+
+//adding new function
+document.querySelector('amount input').addEventListener('blur', function(event) {
+  event.preventDefault(); // Prevent the form from submitting
+
+  const input = document.getElementById('numberInput').value;
+  const errorDiv = document.getElementById('error');
+
+  // Check if input is a number
+  if (!/^\d+$/.test(input)) {
+      errorDiv.textContent = 'Error: Please enter only numbers.';
+  } else {
+      errorDiv.textContent = ''; // Clear error message
+      alert('Form submitted successfully!'); // Or handle form submission here
+      // You can add code to submit the form data to the server
+  }
+});
